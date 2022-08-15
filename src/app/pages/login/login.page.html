@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ingreso</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list lines="full" class="ion-no-margin">
+    <ion-item>
+      <ion-label position="floating">Rut*</ion-label>
+      <ion-input placeholder="ej: 35236320" type="number"></ion-input> 
+    </ion-item> 
+    <ion-item>
+      <ion-label position="floating">Digito verificador*</ion-label>
+      <ion-input placeholder="k"></ion-input>
+    </ion-item> 
+    
+    <ion-item>
+      <ion-label position="floating">Contraseña*</ion-label>
+      <ion-input placeholder="Ingrese su contraseña" type="password"></ion-input>
+    </ion-item>
+
+    <ion-item style="text-align: center;">
+      <ion-button color="primary" [routerLink]="['/home']">Confirmar</ion-button>
+      <ion-button color="primary" [routerLink]="['/home']">Cancelar</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>
