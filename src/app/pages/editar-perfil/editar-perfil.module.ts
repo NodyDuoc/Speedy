@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { EditarPerfilPageRoutingModule } from './editar-perfil-routing.module';
 
 import { EditarPerfilPage } from './editar-perfil.page';
+import { BarraLateralComponent } from 'src/app/components/barra-lateral/barra-lateral.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { EditarPerfilPage } from './editar-perfil.page';
     IonicModule,
     EditarPerfilPageRoutingModule
   ],
-  declarations: [EditarPerfilPage]
+  declarations: [EditarPerfilPage,BarraLateralComponent]
 })
 export class EditarPerfilPageModule {}

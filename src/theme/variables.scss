@@ -2,6 +2,13 @@
 // http://ionicframework.com/docs/theming/
 
 /** Ionic CSS Variables **/
+
+/** 
+Azul Duoc    =    #03162b
+Naranja Duoc =    #f8b31c
+**/
+
+
 :root {
   /** primary **/
   --ion-color-primary: #3880ff;
@@ -12,12 +19,12 @@
   --ion-color-primary-tint: #4c8dff;
 
   /** secondary **/
-  --ion-color-secondary: #3dc2ff;
+  --ion-color-secondary: #f8b31c;
   --ion-color-secondary-rgb: 61, 194, 255;
   --ion-color-secondary-contrast: #ffffff;
   --ion-color-secondary-contrast-rgb: 255, 255, 255;
-  --ion-color-secondary-shade: #36abe0;
-  --ion-color-secondary-tint: #50c8ff;
+  --ion-color-secondary-shade: #da9e1d;
+  --ion-color-secondary-tint: #f5bb3f;
 
   /** tertiary **/
   --ion-color-tertiary: #5260ff;

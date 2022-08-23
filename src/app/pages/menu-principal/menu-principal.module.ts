@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { MenuPrincipalPageRoutingModule } from './menu-principal-routing.module';
 
 import { MenuPrincipalPage } from './menu-principal.page';
+import { BarraLateralComponent } from 'src/app/components/barra-lateral/barra-lateral.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { MenuPrincipalPage } from './menu-principal.page';
     IonicModule,
     MenuPrincipalPageRoutingModule
   ],
-  declarations: [MenuPrincipalPage]
+  declarations: [MenuPrincipalPage,BarraLateralComponent]
 })
 export class MenuPrincipalPageModule {}

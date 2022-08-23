@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { BarraLateralComponent } from '../components/barra-lateral/barra-lateral.component';
 
 
 @NgModule({
@@ -15,6 +14,6 @@ import { BarraLateralComponent } from '../components/barra-lateral/barra-lateral
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage,BarraLateralComponent]
+  declarations: [HomePage]
 })
 export class HomePageModule {}
