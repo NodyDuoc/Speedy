@@ -1,28 +1,25 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Speedy
-    </ion-title>
-    <ion-img src="../../assets/img/DuocUcSpeedy.png" alt="Imagen no encontrada" style="height:50px; float: right;"></ion-img>
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
-  </ion-toolbar>
+<ion-header>
+ 
+
+  
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <app-barra-lateral></app-barra-lateral>
   <div>
-
-    
-
+    <ion-img src="../../assets/img/DuocUcSpeedy.png" alt="Imagen no encontrada" style="height:200px;"></ion-img>
+  </div>
+  <div style="text-align: center;">
+    <div>
+      <ion-button color="primary" [routerLink]="['/login']">Iniciar Sesion</ion-button>
+    </div>
+    <div>
+      <ion-button color="primary" [routerLink]="['/registro-usuario']">Registrarse</ion-button>
+    </div>
+    <div>
+      <ion-button color="primary" [routerLink]="['/perfil']">Registrarse</ion-button>
+    </div>
   </div>
 
-  <ion-button color="primary" [routerLink]="['/login']">Ingresar</ion-button>
-  <ion-button color="primary" [routerLink]="['/registro-usuario']">Registrarse</ion-button>
-  <ion-button color="primary" [routerLink]="['/perfil']">Perfil</ion-button>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
 </ion-content>
+<app-barra-lateral></app-barra-lateral>
