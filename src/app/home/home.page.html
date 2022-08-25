@@ -1,12 +1,26 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
     <ion-title>
       Speedy
     </ion-title>
     <ion-img src="../../assets/img/DuocUcSpeedy.png" alt="Imagen no encontrada" style="height:50px; float: right;"></ion-img>
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-segment value="perfil" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="perfil">
+        <ion-icon name="person-circle-outline"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="experiencia">
+        <ion-icon name="car-sport-outline"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="certificacion">
+        <ion-icon name="people-outline"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
   </ion-toolbar>
 </ion-header>
 
