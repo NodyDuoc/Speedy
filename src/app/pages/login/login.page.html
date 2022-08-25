@@ -1,18 +1,18 @@
 <ion-header>
   <ion-toolbar>
-    <ion-img src="../../assets/img/DuocUcSpeedy.png" alt="Imagen no encontrada" style="height:75px;"></ion-img>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 <ion-content>
+  <div style="margin-top: 10px;">
+    <ion-img src="../../assets/img/DuocUcSpeedy.png" alt="Imagen no encontrada" style="height:250px;"></ion-img>
+  </div>
   <ion-list lines="full" class="ion-no-margin">
     <ion-item>
       <ion-label position="floating">Rut*</ion-label>
       <ion-input placeholder="Ingrese run sin comas*" type="number"></ion-input> 
-     
-      <ion-input placeholder="Ingrese su digito verificador*"></ion-input>
     </ion-item> 
 
     
@@ -21,9 +21,9 @@
       <ion-input placeholder="Ingrese su contraseña*" type="password"></ion-input>
     </ion-item>
 
-    <ion-item style="text-align: center;">
-      <ion-button color="primary" [routerLink]="['/menu-principal']">Confirmar</ion-button>
-      <ion-button color="primary" [routerLink]="['/home']">Cancelar</ion-button>
-    </ion-item>
+    <div style="text-align: center;padding-top: 100px;">
+      <ion-button color="secondary" [routerLink]="['/menu-principal']">Confirmar</ion-button>
+      <ion-button color="secondary" [routerLink]="['/home']">Cancelar</ion-button>
+    </div>
   </ion-list>
 </ion-content>

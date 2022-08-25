@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'menu-principal',
     pathMatch: 'full'
   },
   {
@@ -28,12 +28,12 @@ const routes: Routes = [
     loadChildren: () => import('./pages/modificar-perfil/modificar-perfil.module').then( m => m.ModificarPerfilPageModule)
   },
   {
-    path: 'editar-perfil',
-    loadChildren: () => import('./pages/editar-perfil/editar-perfil.module').then( m => m.EditarPerfilPageModule)
-  },
-  {
     path: 'menu-principal',
     loadChildren: () => import('./pages/menu-principal/menu-principal.module').then( m => m.MenuPrincipalPageModule)
+  },
+  {
+    path: 'modificar-password',
+    loadChildren: () => import('./pages/modificar-password/modificar-password.module').then( m => m.ModificarPasswordPageModule)
   },
   
 ];

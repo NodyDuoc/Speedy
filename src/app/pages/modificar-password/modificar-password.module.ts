@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { EditarPerfilPageRoutingModule } from './editar-perfil-routing.module';
+import { ModificarPasswordPageRoutingModule } from './modificar-password-routing.module';
 
-import { EditarPerfilPage } from './editar-perfil.page';
+import { ModificarPasswordPage } from './modificar-password.page';
 import { BarraLateralComponent } from 'src/app/components/barra-lateral/barra-lateral.component';
 
 @NgModule({
@@ -14,8 +14,8 @@ import { BarraLateralComponent } from 'src/app/components/barra-lateral/barra-la
     CommonModule,
     FormsModule,
     IonicModule,
-    EditarPerfilPageRoutingModule
+    ModificarPasswordPageRoutingModule
   ],
-  declarations: [EditarPerfilPage,BarraLateralComponent]
+  declarations: [ModificarPasswordPage]
 })
-export class EditarPerfilPageModule {}
+export class ModificarPasswordPageModule {}
