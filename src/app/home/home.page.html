@@ -6,18 +6,18 @@
     <ion-title>
       Speedy
     </ion-title>
-    <ion-img src="../../assets/img/DuocUcSpeedy.png" alt="Imagen no encontrada" style="height:50px; float: right;"></ion-img>
+    <ion-img src="/assets/img/DuocUcSpeedy.png" alt="Imagen no encontrada" style="height:50px; float: right;"></ion-img>
   </ion-toolbar>
 
   <ion-toolbar>
-    <ion-segment value="inicio" (ionChange)="segmentChanged($event)">
-      <ion-segment-button value="inicio">
+    <ion-segment value="home" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="comp1">
         <ion-icon name="person-circle-outline"></ion-icon>
       </ion-segment-button>
-      <ion-segment-button value="registroAU">
+      <ion-segment-button value="comp2">
         <ion-icon name="car-sport-outline"></ion-icon>
       </ion-segment-button>
-      <ion-segment-button value="registroPE">
+      <ion-segment-button value="comp3">
         <ion-icon name="people-outline"></ion-icon>
       </ion-segment-button>
     </ion-segment>
@@ -40,3 +40,5 @@
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
 </ion-content>
+
+<ion-router-outlet></ion-router-outlet>

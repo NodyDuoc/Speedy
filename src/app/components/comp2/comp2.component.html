@@ -1,3 +1,58 @@
-<p>
-  comp2 works!
-</p>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registrarse</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="full" class="ion-no-margin">
+    <ion-item>
+      <ion-label position="floating">Rut*</ion-label>
+      <ion-input placeholder="ej: 35236320" type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Digito verificador*</ion-label>
+      <ion-input placeholder="k"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Nombre/s*</ion-label>
+      <ion-input placeholder="Ingrese su nombre"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Apellido/s</ion-label>
+      <ion-input placeholder="Ingrese su apellido"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Correo*</ion-label>
+      <ion-input placeholder="Ingrese su nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Patente*</ion-label>
+      <ion-input placeholder="Ingrese su Patente"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña*</ion-label>
+      <ion-input placeholder="Ingrese su contraseña" type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Confirmar Contraseña*</ion-label>
+      <ion-input placeholder="Ingrese su contraseña" type="password"></ion-input>
+    </ion-item>
+    <div style="text-align: center;">
+      <div>
+        <div class="col-6">
+          <ion-button color="secondary" [routerLink]="['/menu-principal']">Confirmar</ion-button>
+        </div>
+        <div class="col-6">
+          <ion-button color="secondary" [routerLink]="['/']">Regresar</ion-button>
+        </div>
+      </div>
+    </div>
+
+  </ion-list>
+</ion-content>
