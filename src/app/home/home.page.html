@@ -1,24 +1,42 @@
-<ion-header>
- 
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Speedy
+    </ion-title>
+    <ion-img src="../../assets/img/DuocUcSpeedy.png" alt="Imagen no encontrada" style="height:50px; float: right;"></ion-img>
+  </ion-toolbar>
 
-  
+  <ion-toolbar>
+    <ion-segment value="inicio" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="inicio">
+        <ion-icon name="person-circle-outline"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="registroAU">
+        <ion-icon name="car-sport-outline"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="registroPE">
+        <ion-icon name="people-outline"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <app-barra-lateral></app-barra-lateral>
-  <div style="margin-top: 75px;">
-    <ion-img src="../../assets/img/DuocUcSpeedy.png" alt="Imagen no encontrada" style="height:250px;"></ion-img>
-  </div>
-  <div style="text-align: center;">
-    <div>
-      <ion-button color="secondary" [routerLink]="['/login']">Iniciar Sesion</ion-button>
-    </div>
-    <div>
-      <ion-button color="secondary" [routerLink]="['/registro-usuario']">Registrarse</ion-button>
-    </div>
-    <div>
-      <ion-button color="secondary" [routerLink]="['/registro-usuario']">Registrarse</ion-button>
-    </div>
+  <div>
+
+    
+
   </div>
 
+  <ion-button color="primary" [routerLink]="['/login']">Ingresar</ion-button>
+  <ion-button color="primary" [routerLink]="['/registro-usuario']">Registrarse</ion-button>
+  <ion-button color="primary" [routerLink]="['/perfil']">Perfil</ion-button>
+
+  <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div>
 </ion-content>
