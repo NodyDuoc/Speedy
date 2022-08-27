@@ -7,7 +7,6 @@ import { IonicModule } from '@ionic/angular';
 import { ModificarPerfilPageRoutingModule } from './modificar-perfil-routing.module';
 
 import { ModificarPerfilPage } from './modificar-perfil.page';
-import { BarraLateralComponent } from 'src/app/components/barra-lateral/barra-lateral.component';
 
 @NgModule({
   imports: [
@@ -16,6 +15,6 @@ import { BarraLateralComponent } from 'src/app/components/barra-lateral/barra-la
     IonicModule,
     ModificarPerfilPageRoutingModule
   ],
-  declarations: [ModificarPerfilPage,BarraLateralComponent]
+  declarations: [ModificarPerfilPage]
 })
 export class ModificarPerfilPageModule {}

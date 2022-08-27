@@ -7,7 +7,6 @@ import { IonicModule } from '@ionic/angular';
 import { ModificarPasswordPageRoutingModule } from './modificar-password-routing.module';
 
 import { ModificarPasswordPage } from './modificar-password.page';
-import { BarraLateralComponent } from 'src/app/components/barra-lateral/barra-lateral.component';
 
 @NgModule({
   imports: [
