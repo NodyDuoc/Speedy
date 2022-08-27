@@ -34,7 +34,15 @@ const routes: Routes = [
   {
     path: 'modificar-password',
     loadChildren: () => import('./pages/modificar-password/modificar-password.module').then( m => m.ModificarPasswordPageModule)
+  },  {
+    path: 'buscar-conductores',
+    loadChildren: () => import('./pages/buscar-conductores/buscar-conductores.module').then( m => m.BuscarConductoresPageModule)
   },
+  {
+    path: 'buscar-pasajeros',
+    loadChildren: () => import('./pages/buscar-pasajeros/buscar-pasajeros.module').then( m => m.BuscarPasajerosPageModule)
+  },
+
   
 ];
 

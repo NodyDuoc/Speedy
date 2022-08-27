@@ -10,7 +10,7 @@
   </ion-toolbar>
 
   <ion-toolbar>
-    <ion-segment value="home" (ionChange)="segmentChanged($event)">
+    <ion-segment (ionChange)="segmentChanged($event)">
       <ion-segment-button value="comp1">
         <ion-icon name="person-circle-outline"></ion-icon>
       </ion-segment-button>
@@ -25,20 +25,35 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div>
 
-    
+  <div style="margin-top: 20px;">
+    <ion-img src="/assets/img/DuocUcSpeedy.png" alt="Imagen no encontrada" style="height:250px;"></ion-img>
+  </div>
+  <div style="text-align: center;"><strong>Bienvenid@ a Speedy Duoc</strong>
+    <div style="margin-top: 20px;">
+      <strong style="margin-top: 10px;">Que desea hacer?</strong>
+    </div>
+
+    <div style="margin-top: 20px;">
+      <ion-icon name="person-circle-outline" size="large"></ion-icon>
+      <strong>Iniciar sesion</strong>
+    </div>
+    <div>
+      <ion-icon name="car-sport-outline" size="large"></ion-icon>
+      <strong>Registrarme como conducor</strong>
+    </div>
+    <div>
+      <ion-icon name="people-outline" size="large"></ion-icon>
+      <strong>Registrarme como pasajero</strong>
+    </div>
+
+
+
 
   </div>
 
-  <ion-button color="primary" [routerLink]="['/login']">Ingresar</ion-button>
-  <ion-button color="primary" [routerLink]="['/registro-usuario']">Registrarse</ion-button>
-  <ion-button color="primary" [routerLink]="['/perfil']">Perfil</ion-button>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
 </ion-content>
 
 <ion-router-outlet></ion-router-outlet>
