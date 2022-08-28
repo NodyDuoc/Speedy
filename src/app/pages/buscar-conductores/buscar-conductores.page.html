@@ -18,71 +18,8 @@
   </div>
 
   <ion-grid>
-    <div style="margin-bottom: 20px;">
-      <ion-row>
-        <ion-col>
-          <div>
-            <ion-img src="/assets/icon/favicon.png" alt="Imagen no encontrada" style="height:50px;"></ion-img>
-          </div>
-        </ion-col>
-        <ion-col>
-          <div>Juan Carlos</div>
-          <div>Ing Informatica</div>
-        </ion-col>
-      </ion-row>
-    </div>
-    <div style="margin-bottom: 20px;">
-      <ion-row>
-        <ion-col>
-          <div>
-            <ion-img src="/assets/icon/favicon.png" alt="Imagen no encontrada" style="height:50px;"></ion-img>
-          </div>
-        </ion-col>
-        <ion-col>
-          <div>Maria Santanos</div>
-          <div>Telecomunacaciones</div>
-        </ion-col>
-      </ion-row>
-    </div>
-    <div style="margin-bottom: 20px;">
-      <ion-row>
-        <ion-col>
-          <div>
-            <ion-img src="/assets/icon/favicon.png" alt="Imagen no encontrada" style="height:50px;"></ion-img>
-          </div>
-        </ion-col>
-        <ion-col>
-          <div>Marco Filiano</div>
-          <div>Contraterrorismo</div>
-        </ion-col>
-      </ion-row>
-    </div>
-    <div style="margin-bottom: 20px;">
-      <ion-row>
-        <ion-col>
-          <div>
-            <ion-img src="/assets/icon/favicon.png" alt="Imagen no encontrada" style="height:50px;"></ion-img>
-          </div>
-        </ion-col>
-        <ion-col>
-          <div>Estevan Chaves</div>
-          <div>Secuestro Profesional</div>
-        </ion-col>
-      </ion-row>
-    </div>
-    <div style="margin-bottom: 20px;">
-      <ion-row>
-        <ion-col>
-          <div>
-            <ion-img src="/assets/icon/favicon.png" alt="Imagen no encontrada" style="height:50px;"></ion-img>
-          </div>
-        </ion-col>
-        <ion-col>
-          <div>Mega Mente</div>
-          <div>SUPER villano</div>
-        </ion-col>
-      </ion-row>
-    </div>
+
+      <app-buscar-conductor *ngFor="let x of usuarios" [datos]="x"></app-buscar-conductor>
 
   </ion-grid>
 

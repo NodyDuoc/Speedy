@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { BuscarConductoresPageRoutingModule } from './buscar-conductores-routing.module';
 
 import { BuscarConductoresPage } from './buscar-conductores.page';
+import { BuscarConductorComponent } from 'src/app/components/buscar-conductor/buscar-conductor.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { BuscarConductoresPage } from './buscar-conductores.page';
     IonicModule,
     BuscarConductoresPageRoutingModule
   ],
-  declarations: [BuscarConductoresPage]
+  declarations: [BuscarConductoresPage,BuscarConductorComponent]
 })
 export class BuscarConductoresPageModule {}
