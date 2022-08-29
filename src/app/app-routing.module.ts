@@ -42,7 +42,15 @@ const routes: Routes = [
   {
     path: 'buscar-pasajeros',
     loadChildren: () => import('./pages/buscar-pasajeros/buscar-pasajeros.module').then( m => m.BuscarPasajerosPageModule)
+  },  {
+    path: 'ver-conductor',
+    loadChildren: () => import('./pages/ver-conductor/ver-conductor.module').then( m => m.VerConductorPageModule)
   },
+  {
+    path: 'ver-pasajero',
+    loadChildren: () => import('./pages/ver-pasajero/ver-pasajero.module').then( m => m.VerPasajeroPageModule)
+  },
+
 
   
 ];

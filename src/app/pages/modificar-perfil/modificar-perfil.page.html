@@ -7,5 +7,45 @@
 </ion-header>
 
 <ion-content>
-  Hola
+  <ion-item>
+    <ion-label position="floating">Rut*</ion-label>
+    <ion-input placeholder="ej: 35236320" type="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Digito verificador*</ion-label>
+    <ion-input placeholder="k"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Nombre/s*</ion-label>
+    <ion-input placeholder="Ingrese su nombre"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Apellido/s</ion-label>
+    <ion-input placeholder="Ingrese su apellido"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Correo*</ion-label>
+    <ion-input placeholder="Ingrese su nombre"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Donde vive</ion-label>
+    <ion-input placeholder="Ingrese Donde vive"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Patente</ion-label>
+    <ion-input placeholder="Ingrese su Patente"></ion-input>
+  </ion-item>
+  
+  <div style="text-align: center;">
+    <div>
+   
+        <ion-button color="secondary" [routerLink]="['/perfil']">Confirmar</ion-button>
+    
+     
+        <ion-button color="secondary" [routerLink]="['/perfil']">Regresar</ion-button>
+    
+    </div>
+  </div>
 </ion-content>
