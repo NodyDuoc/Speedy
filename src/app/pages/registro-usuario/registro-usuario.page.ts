@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-registro-usuario',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistroUsuarioPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private menu: MenuController) {
+    this.menu.enable(true);
+  }
 
   ngOnInit() {
   }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-buscar-conductores',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./buscar-conductores.page.scss'],
 })
 export class BuscarConductoresPage implements OnInit {
+
+  
 
   usuarios: any = [
     {
@@ -30,7 +34,9 @@ export class BuscarConductoresPage implements OnInit {
     },
   ]
 
-  constructor() { }
+  constructor(private router: Router, private menu: MenuController) {
+    this.menu.enable(true);
+  }
 
   ngOnInit() {
   }
