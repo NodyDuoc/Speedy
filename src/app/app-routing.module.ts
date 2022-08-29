@@ -50,6 +50,10 @@ const routes: Routes = [
     path: 'ver-pasajero',
     loadChildren: () => import('./pages/ver-pasajero/ver-pasajero.module').then( m => m.VerPasajeroPageModule)
   },
+  {
+    path: 'modificar-ruta',
+    loadChildren: () => import('./pages/modificar-ruta/modificar-ruta.module').then( m => m.ModificarRutaPageModule)
+  },
 
 
   

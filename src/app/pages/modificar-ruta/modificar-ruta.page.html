@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-select placeholder="Seleccione donde pueda dejar pasajeros" [multiple]="true">
+        <ion-select-option value="Cerrillos">Cerrillos</ion-select-option>
+        <ion-select-option value="Cerro Navia">Cerro Navia</ion-select-option>
+        <ion-select-option value="Conchalí">Conchalí</ion-select-option>
+
+        <ion-select-option value="El Bosque">El Bosque</ion-select-option>
+        <ion-select-option value="Estación Central">Estación Central</ion-select-option>
+        <ion-select-option value="Huechuraba">Huechuraba</ion-select-option>
+        <ion-select-option value="Independencia">Independencia</ion-select-option>
+        <ion-select-option value="La Cisterna">La Cisterna</ion-select-option>
+        <ion-select-option value="La Florida">La Florida</ion-select-option>
+        <ion-select-option value="La Pintana">La Pintana</ion-select-option>
+        <ion-select-option value="La Granja">La Granja</ion-select-option>
+        <ion-select-option value="La Reina">La Reina</ion-select-option>
+        <ion-select-option value="Las Condes">Las Condes</ion-select-option>
+        <ion-select-option value="Lo Barnechea">Lo Barnechea</ion-select-option>
+        <ion-select-option value="Lo Espejo">Lo Espejo</ion-select-option>
+        <ion-select-option value="Lo Prado">Lo Prado</ion-select-option>
+        <ion-select-option value="Macul">Macul</ion-select-option>
+        <ion-select-option value="Maipú">Maipú</ion-select-option>
+        <ion-select-option value="Ñuñoa">Ñuñoa</ion-select-option>
+        <ion-select-option value="Pedro Aguirre Cerda">Pedro Aguirre Cerda</ion-select-option>
+        <ion-select-option value="Peñalolén">Peñalolén</ion-select-option>
+        <ion-select-option value="Providencia">Providencia</ion-select-option>
+        <ion-select-option value="Quilicura">Pudahuel</ion-select-option>
+        <ion-select-option value="Quilicura">Quilicura</ion-select-option>
+        <ion-select-option value="Quinta Normal">Quinta Normal</ion-select-option>
+        <ion-select-option value="Recoleta">Recoleta</ion-select-option>
+        <ion-select-option value="Renca">Renca</ion-select-option>
+        <ion-select-option value="San Miguel">San Miguel</ion-select-option>
+        <ion-select-option value="San Joaquín">San Joaquín</ion-select-option>
+        <ion-select-option value="San Ramón">San Ramón</ion-select-option>
+        <ion-select-option value="Santiago Centro">Santiago (Centro)</ion-select-option>
+        <ion-select-option value="Vitacura">Vitacura</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  
+  <div style="text-align: center;">
+    <div>
+   
+        <ion-button color="secondary" [routerLink]="['/perfil']">Confirmar</ion-button>
+    
+     
+        <ion-button color="secondary" [routerLink]="['/perfil']">Regresar</ion-button>
+    
+    </div>
+  </div>
+</ion-content>
